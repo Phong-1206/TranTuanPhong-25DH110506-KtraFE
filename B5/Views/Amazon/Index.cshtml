@@ -1,0 +1,240 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <style>
+        /* CSS pseudo-element styling */
+        /* general reset/setup styling for icons - needed on all */
+        .icon::before {
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+            display: inline-block;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            line-height: 1;
+        }
+
+        /* defining the right font-family/font-face for each style */
+        .icon-solid::before {
+            font-family: "Font Awesome 5 Free";
+        }
+
+        .icon-brand::before {
+            font-family: "Font Awesome 5 Brands";
+        }
+
+        /* defining the right weight for each style */
+        .icon-solid::before {
+            font-weight: 900;
+        }
+
+        .icon-brand::before {
+            font-weight: 400;
+        }
+
+        /* defining the right unicode values for each icon */
+        .icon-microphone::before {
+            content: "\f130";
+        }
+
+        .icon-aws::before {
+            content: "\f375";
+        }
+
+        /*Custom CSS*/
+        h1, h2 {
+            text-align: center;
+        }
+
+            h1 span {
+                margin: 0 20px;
+            }
+
+                h1 span:before {
+                    margin-right: 1rem;
+                    color: red;
+                }
+
+        .rating-outer {
+            position: relative;
+            color: red;
+            display: inline-block;
+        }
+
+        .rating-inner {
+            position: absolute;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+        }
+
+            .rating-outer::before,
+            .rating-inner::before {
+                font-family: "Font Awesome 5 Free";
+                font-weight: 400;
+                content: "\f005 \f005 \f005 \f005 \f005";
+            }
+
+            .rating-inner::before {
+                font-weight: 900;
+            }
+        
+    </style>
+</head>
+<body>
+    <header>
+            
+        <div style="display: flex; background-color: #010b1f; border: 0px 10px 0px 10px; font-size:20px; padding: 10px">
+            <div style="padding: 0px 20px;">
+                <span class="icon icon-brand icon-aws" style="color: white; font-size: 25px;"></span>
+            </div>
+                
+                <div style="margin:0px auto;">
+                    <input style="width: 900px; border-radius: 5px;" class="ip-search" />
+                    <button class="btn-search" style="background-color: yellow; color: #010b1f; border: none; margin-right: 20px; border-radius: 5px;">Go</button>
+                </div>
+                <div style="color: white;">
+                    <a>Your Account</a> | <a>Help</a> | <a>Cart</a>
+                </div>
+        </div>
+    </header>
+    <main style="background-color: lightgray; padding: 50px;">
+        <div >
+            <h1>
+                Toys for litter ones
+            </h1>
+        </div>
+        <style>
+            .main-card {
+                display: flex;
+            }
+            .card {
+                background-color: whitesmoke; 
+                height: 420px;
+                width: 400px;
+                margin: 0px auto;
+                
+            }
+            .card-con {
+                margin: 0px 20px;
+            }
+            .image-qa{
+                width: 125px;
+                height: 125px;
+            }
+        </style>
+        <div class="main-card">
+            <div class="card">
+                <h2>
+                    Get your game on
+                </h2>
+                <img style="margin: 0px auto;" src="https://hdtech.com.vn/wp-content/uploads/2025/06/banner-doc-580x800.jpg" alt="Get Pc" width="300" height="330" />
+                <a style="color: dodgerblue; margin:auto 10px;">Shop gaming</a>
+            </div>
+            <div class="card">
+                <h3 style="margin: 0 auto;">
+                    Shop Fashion for less
+                </h3>
+                <div style="display: flex; margin: 0 auto;">
+                    <div class="card-con">
+                        <img class="image-qa" src="https://dongphuchaianh.vn/wp-content/uploads/2022/03/quan-ao-the-thao-cho-nam-va-nu.jpg" />
+                        <p>Mat Truoc</p>
+                    </div>
+                    <div class="card-con">
+                        <img class="image-qa" src="https://dongphuchaianh.vn/wp-content/uploads/2022/03/ao-quan-the-thao.jpg" />
+                        <p>Mat Xoay</p>
+                    </div>
+                </div>
+                <div style="display: flex; margin: 0 auto;">
+                    <div class="card-con">
+                        <img class="image-qa" src="https://dongphuchaianh.vn/wp-content/uploads/2022/03/ao-quan-the-thao-nam.jpg" />
+                        <p>Mat Xoay</p>
+                    </div>
+                    <div class="card-con">
+                        <img class="image-qa" src="https://dongphuchaianh.vn/wp-content/uploads/2022/03/ao-quan-the-thao-dep.jpg" />
+                        <p>Mat Truoc</p>
+                    </div>
+                </div>
+                <a style="color: dodgerblue; margin:auto 10px;">See alls docs</a>
+            </div>
+            <div class="card">
+                <h3 style="margin: 0 auto;">
+                    Shop your for home essentials
+                </h3>
+                <div style="display: flex; margin: 0 auto;">
+                    <div class="card-con">
+                        <img class="image-qa" src="https://m.media-amazon.com/images/I/415fShfBidL._SR210,210_.jpg" />
+                        <p>Candles</p>
+                    </div>
+                    <div class="card-con">
+                        <img class="image-qa" src="https://m.media-amazon.com/images/I/41eHYxK1H4L._SR210,210_.jpg" />
+                        <p>Stylish pillows</p>
+                    </div>
+                </div>
+                <div style="display: flex; margin: 0 auto;">
+                    <div class="card-con">
+                        <img class="image-qa" src="https://m.media-amazon.com/images/I/41RqiI-5T5L._SR210,210_.jpg" />
+                        <p>Indoor gardening</p>
+                    </div>
+                    <div class="card-con">
+                        <img class="image-qa" src="https://m.media-amazon.com/images/I/41wRrAnGAJL._SR210,210_.jpg" />
+                        <p>Storage organization</p>
+                    </div>
+                </div>
+                <a style="color: dodgerblue; margin:auto 10px;">See alls docs</a>
+            </div>
+
+            <div class="card">
+                <h3 style="margin: 0 auto;">
+                    Refresh your space
+                </h3>
+                <div style="display: flex; margin: 0 auto;">
+                    <div class="card-con">
+                        <img class="image-qa" src="https://m.media-amazon.com/images/I/41Nldn0FGML._SR210,210_.jpg" />
+                        <p>Televisions</p>
+                    </div>
+                    <div class="card-con">
+                        <img class="image-qa" src="https://m.media-amazon.com/images/I/4198T9z6hjL._SR210,210_.jpg" />
+                        <p>Speakers</p>
+                    </div>
+                </div>
+                <div style="display: flex; margin: 0 auto;">
+                    <div class="card-con">
+                        <img class="image-qa" src="https://m.media-amazon.com/images/I/41Z1yvPi2rL._SR210,210_.jpg" />
+                        <p>Soundbars</p>
+                    </div>
+                    <div class="card-con">
+                        <img class="image-qa" src="https://m.media-amazon.com/images/I/41J5MFD8nnL._SR210,210_.jpg" />
+                        <p>Projectors</p>
+                    </div>
+                </div>
+                <a style="color: dodgerblue; margin:auto 10px;">See alls docs</a>
+            </div>
+
+        </div>
+    </main>
+    <footer style="background-color: #010b1f; padding: 100px; text-align: center; color: white;">
+        <span> Cre: Tran Tuan Phong</span>
+    </footer>
+    @*<h1>
+        <span class="icon icon-solid icon-microphone">Microphone</span>
+        <span class="icon icon-brand icon-aws">Amazon</span>
+    </h1>
+    <h2>
+        <span class="icon rating-outer">
+            <span class="icon rating-inner" style="width: 50%"></span>
+        </span>
+        (69 reviews)
+    </h2>*@
+</body>
+</html>
